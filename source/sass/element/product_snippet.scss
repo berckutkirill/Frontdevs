@@ -1,0 +1,58 @@
+.snippet {
+	width: $snip-w;
+	height: $snip-h;
+	position: relative;
+	background-color: $bgc-card;
+	border: $snip-act-bw solid $bgc-card;
+	cursor: pointer;
+	transition: border .3s;
+
+	&:hover {
+		border: $snip-act-bw solid $color-br;
+		border-radius: $snip-act-br;
+	}
+
+	&__sizes {
+		position: absolute;
+		left: $snip-offset;
+		top: $snip-offset;
+		color: $color-text;
+	}
+
+	&__colors {
+		position: absolute;
+		right: $snip-offset;
+		top: $snip-offset;
+		font-size: 0;
+
+		&-item {
+			width: $snip-color;
+			height: $snip-color;
+			border-radius: 50%;
+			background-color: pink;
+			display: inline-block;
+
+			&:not(:first-child) {
+				margin-left: 4px;
+			}
+		}
+	}
+
+	&__title {
+		position: absolute;
+		left: $snip-offset;
+		bottom: $snip-offset;
+		color: $color-br;
+	}
+
+	&__price {
+		position: absolute;
+		right: $snip-offset;
+		bottom: $snip-offset;
+		color: $color-text;
+	}
+
+	&__img {
+		@include centered();
+	}
+}

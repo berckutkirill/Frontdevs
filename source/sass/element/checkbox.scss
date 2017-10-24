@@ -1,0 +1,47 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	&:hover {
+		.checkbox__box {
+			border-color: $color-br;
+		}
+	}
+
+	&__input {
+		display: none;
+
+		&:checked ~ .checkbox__box {
+			border-color: $color-br;
+			color: $color-br;
+		}
+
+		&:checked ~ .checkbox__box .checkbox__box-svg {
+			opacity: 1;
+		}
+	}
+
+	&__box {
+		flex: 0 0 $check-w;
+		width: $check-w;
+		height: $check-h;
+		border: $check-bw solid $color-hr;
+		border-radius: $check-br;
+		position: relative;
+		transition: border .2s;
+
+		&-svg {
+			opacity: 0;
+			@include centered();
+		}
+	}
+
+	&__label {
+		padding-left: 18px;
+
+		@include phone {
+			padding-left: 12px;
+		}
+	}
+}

@@ -1,0 +1,149 @@
+{
+	"category": [
+		{
+			"title": "men",
+			"checked": true
+		}, {
+			"title": "women",
+			"checked": false
+		}, {
+			"title": "children",
+			"checked": false
+		}
+	],
+	"sort": [
+		{
+			"title": "price",
+			"checked": false
+		}, {
+			"title": "name",
+			"checked": false
+		}
+	],
+	"products": [
+		{
+			"title": "men",
+			"items": [
+				{
+					"title": "t-shirt",
+					"sizes": ["s", "l", "xl"],
+					"colors": ["#165eb9", "#ffe637", "#535253"],
+					"price": "5,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"title": "pants forclaz",
+					"sizes": ["l", "xl"],
+					"colors": null,
+					"price": "30,00",
+					"img": "./img/Livello 3.png"
+				}, {
+					"title": "backpack",
+					"sizes": "10litr",
+					"colors": null,
+					"price": "60,00",
+					"img": "./img/Livello 4.png"
+				}, {
+					"title": "t-shirt",
+					"sizes": ["s", "l", "xl"],
+					"colors": ["#165eb9", "#ffe637", "#535253"],
+					"price": "6,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"title": "pants forclaz",
+					"sizes": ["l", "xl"],
+					"colors": null,
+					"price": "29,00",
+					"img": "./img/Livello 3.png"
+				}, {
+					"title": "backpack",
+					"sizes": "10litr",
+					"colors": null,
+					"price": "60,00",
+					"img": "./img/Livello 4.png"
+				}, {
+					"title": "t-shirt",
+					"sizes": ["s", "l", "xl"],
+					"colors": ["#165eb9", "#ffe637", "#535253"],
+					"price": "5,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"title": "pants forclaz",
+					"sizes": ["l", "xl"],
+					"colors": null,
+					"price": "31,00",
+					"img": "./img/Livello 3.png"
+				}, {
+					"title": "backpack",
+					"sizes": "10litr",
+					"colors": null,
+					"price": "65,00",
+					"img": "./img/Livello 4.png"
+				}
+			]
+		}, {
+			"title": "women",
+			"items": [
+				{
+					"title": "giacket",
+					"sizes": ["s", "l"],
+					"colors": ["#165eb9", "#ffe637", "#d3a7ac", "#535253", "#000000"],
+					"price": "60,00",
+					"img": "./img/Livello 5.png"
+				}, {
+					"title": "trekking shoes",
+					"sizes": ["6", "6.5", "7", "7.5", "8", "8.5"],
+					"colors": null,
+					"price": "80,00",
+					"img": "./img/Livello 6.png"
+				}, {
+					"title": "t-shirt",
+					"sizes": ["6", "6.5", "7", "7.5", "8", "8.5"],
+					"colors": null,
+					"price": "7,00",
+					"img": "./img/Livello 7.png"
+				}, {
+					"title": "giacket",
+					"sizes": ["s", "l"],
+					"colors": ["#165eb9", "#ffe637", "#d3a7ac", "#535253", "#000000"],
+					"price": "60,00",
+					"img": "./img/Livello 5.png"
+				}, {
+					"title": "trekking shoes",
+					"sizes": ["6", "6.5", "7", "7.5", "8", "8.5"],
+					"colors": null,
+					"price": "80,00",
+					"img": "./img/Livello 6.png"
+				}, {
+					"title": "t-shirt",
+					"sizes": ["6", "6.5", "7", "7.5", "8", "8.5"],
+					"colors": null,
+					"price": "7,00",
+					"img": "./img/Livello 7.png"
+				}
+			]
+		}, {
+			"title": "children",
+			"items": [
+				{
+					"title": "giacket",
+					"sizes": ["s", "l"],
+					"colors": ["#165eb9", "#ffe637", "#d3a7ac", "#535253", "#000000"],
+					"price": "60,00",
+					"img": "./img/Livello 5.png"
+				}, {
+					"title": "trekking shoes",
+					"sizes": ["6", "6.5", "7", "7.5", "8", "8.5"],
+					"colors": null,
+					"price": "80,00",
+					"img": "./img/Livello 6.png"
+				}, {
+					"title": "t-shirt",
+					"sizes": "s",
+					"colors": ["#d3a7ac", "#165eb9", "#ffffff"],
+					"price": "5,00",
+					"img": "./img/Layer 1.png"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,11 @@
+-	var filters = ['Men', 'Women', 'Children kid'];
+
+.filter
+	.filter__controls
+		ul.filter__controls-list
+			each item in filters
+				li.filter__controls-item
+					+checkbox(item)
+
+	.filter__select
+		button.filter__select-but.button See all products

@@ -1,0 +1,21 @@
+.slider
+	.slider__head
+		.slider__head-aside
+			.slider__pages
+				span.slider__pages-page 1
+				span.slider__pages-sl /
+				span.slider__pages-allpage 5
+
+			.slider__controls
+				.slider__controls-item.prev
+					+svg('arrow-1')
+				.slider__controls-item.next
+					+svg('arrow-1')
+
+	.slider__main
+		ul.slider__list
+			li.slider__item
+				include ../element/product-snippet
+
+				include ../element/product-snippet
+				include ../element/product-snippet

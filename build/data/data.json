@@ -1,0 +1,85 @@
+{
+	"category": ["men", "women", "children"],
+	"sort": ["name", "price"],
+	"products": [
+		{
+			"category": "men",
+			"product": [
+				{
+					"id": 1,
+					"name": "t-shirt",
+					"sizes": ["s", "l", "xl"],
+					"colors": ["blue", "yellow", "gray"],
+					"price": "5,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"id": 2,
+					"name": "pants forclaz",
+					"sizes": ["l", "xl"],
+					"colors": null,
+					"price": "30,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"id": 3,
+					"name": "backpack",
+					"sizes": "10litr",
+					"colors": null,
+					"price": "60,00",
+					"img": "./img/Layer 1.png"
+				}
+			]
+		}, {
+			"category": "women",
+			"product": [
+				{
+					"id": 1,
+					"name": "giacket",
+					"sizes": ["s", "l"],
+					"colors": ["blue", "yellow", "red", "gray", "black"],
+					"price": "60,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"id": 2,
+					"name": "trekking shoes",
+					"sizes": ["6", "6.5", "7", "7.5", "8", "8.5"],
+					"colors": null,
+					"price": "80,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"id": 3,
+					"name": "t-shirt",
+					"sizes": "s",
+					"colors": ["pink", "blue", "white"],
+					"price": "5,00",
+					"img": "./img/Layer 1.png"
+				}
+			]
+		}, {
+			"category": "children",
+			"product": [
+				{
+					"id": 1,
+					"name": "giacket",
+					"sizes": ["s", "l"],
+					"colors": ["blue", "yellow", "red", "gray", "black"],
+					"price": "60,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"id": 2,
+					"name": "trekking shoes",
+					"sizes": ["6", "6.5", "7", "7.5", "8", "8.5"],
+					"colors": null,
+					"price": "80,00",
+					"img": "./img/Layer 1.png"
+				}, {
+					"id": 3,
+					"name": "t-shirt",
+					"sizes": "s",
+					"colors": ["pink", "blue", "white"],
+					"price": "5,00",
+					"img": "./img/Layer 1.png"
+				}
+			]
+		}
+	]
+}

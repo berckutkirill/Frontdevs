@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Frontdevs</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <script src="../js/_.js"></script>
+    <script src="../js/ui/_ui.js"></script>
+    <script src="../js/ui/Card.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <svg class="svg svg-google">
+            <use xlink:href="../svg/sprite.svg#google"></use>
+          </svg>
+        </div>
+      </header>
+      <main class="main">
+        <div class="tovar">
+          <section class="tovar__nav">
+            <div class="container"><a class="tovar__nav-link">
+                <svg class="svg svg-arrow-1">
+                  <use xlink:href="../svg/sprite.svg#arrow-1"></use>
+                </svg><span>back to catalog</span></a></div>
+          </section>
+          <section class="tovar__main">
+            <div class="container">
+              <div class="tovar__title"><span class="tovar__title-value"></span></div>
+              <div class="card-container"></div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script>
+      (function() {
+      	var card = new Catalog.ui.Card();
+      			card.render(document.querySelector('.card-container'), JSON.parse(localStorage.getItem('snippet')));
+      
+      	document.querySelector('.tovar__nav-link').addEventListener('click', function() {
+      		window.history.back();
+      	})
+      
+      })();
+    </script>
+  </body>
+</html>

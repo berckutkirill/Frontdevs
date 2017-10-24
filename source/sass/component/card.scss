@@ -1,0 +1,77 @@
+.card {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: $bgc-card;
+	border: $card-br solid $color-br;
+	padding: $card-pad;
+	justify-content: center;
+	font-size: $fz-card-prod;
+	line-height: $lh-card-prod;
+
+	@include phone {
+		font-size: 14px;
+		padding: 30px 15px 20px;
+	}
+
+	&__tovar {
+		flex: 1 1 320px;
+		max-width: 450px;
+
+		&-img {
+			width: 100%;
+		}
+	}
+
+	&__desc {
+		display: flex;
+		@include phone {
+			flex: 1 0;
+		}
+
+		&-list {
+			display: flex;
+			flex: 1 0;
+			flex-direction: column;
+			justify-content: space-between;
+
+			&:first-child {
+				text-align: right;
+				padding-right: $card-value-off;
+
+				@include phone {
+					padding-right: 25px;
+				}
+			}
+
+			&:last-child {
+
+			}
+		}
+
+		&-colors {
+			font-size: 0;
+			margin-right: -$card-col-off-x;
+			min-height: $card-col;
+
+			@include phone {
+				min-height: 19px;
+			}
+		}
+
+		&-color {
+			display: inline-block;
+			width: $card-col;
+			height: $card-col;
+			border-radius: 50%;
+			background-color: pink;
+			margin-right: $card-col-off-x;
+
+			@include phone {
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+}

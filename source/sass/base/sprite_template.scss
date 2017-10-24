@@ -1,0 +1,11 @@
+.svg {
+	display: inline-block;
+	fill: currentColor;
+}
+
+{{#shapes}}
+.svg-{{base}} {
+	width: {{width.inner}}px;
+	height: {{height.inner}}px;
+}
+{{/shapes}}

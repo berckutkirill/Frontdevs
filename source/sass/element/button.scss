@@ -1,0 +1,21 @@
+.button {
+	background-color: $color-br;
+	padding: 20px 34px;
+	display: block;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Quicksand';
+	font-size: $fz-but;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .25s;
+
+	&:hover {
+		background-color: #867d68;
+	}
+
+	@include phone {
+		padding: 16px 28px;
+	}
+}

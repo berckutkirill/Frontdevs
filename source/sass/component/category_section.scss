@@ -1,0 +1,35 @@
+.category {
+	width: 100%;
+	padding: $prod-sec-p;
+	border-top: $prod-sec-bw solid $color-hr;
+	position: relative;
+
+	@include phone {
+		padding: 40px 0 80px;
+	}
+
+	&__title {
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translateY(-58%);
+		display: block;
+		background-color: #FFF;
+		padding-right: $prod-sec-t;
+		font-size: $fz-title;
+
+		@include phone {
+			font-size: 16px;
+			padding-right: 20px;
+		}
+	}
+
+	&--rev {
+		.category__title {
+			left: auto;
+			right: 0px;
+			padding-right: 0;
+			padding-left: $prod-sec-t;
+		}
+	}
+}

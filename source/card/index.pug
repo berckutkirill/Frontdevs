@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width initial-scale=1.0")
+		meta(http-equiv="x-ua-compatible" content="ie=edge")
+		title Frontdevs
+		link(rel="stylesheet", href="../css/main.css")
+		script(src="../js/_.js")
+		script(src="../js/ui/_ui.js")
+		script(src="../js/ui/Card.js")
+	body
+
+		.wrapper
+
+			header.header
+				.container
+					svg(class=`svg svg-google`)
+						use(xlink:href=`../svg/sprite.svg#google`)
+
+			main.main
+				.tovar
+					section.tovar__nav
+						.container
+							a.tovar__nav-link()
+								svg(class=`svg svg-arrow-1`)
+									use(xlink:href=`../svg/sprite.svg#arrow-1`)
+								span back to catalog
+
+					section.tovar__main
+						.container
+
+							.tovar__title
+								span.tovar__title-value
+
+							.card-container
+
+		script.
+			(function() {
+				var card = new Catalog.ui.Card();
+						card.render(document.querySelector('.card-container'), JSON.parse(localStorage.getItem('snippet')));
+
+				document.querySelector('.tovar__nav-link').addEventListener('click', function() {
+					window.history.back();
+				})
+
+			})();

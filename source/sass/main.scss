@@ -1,0 +1,119 @@
+@import "./vendor/normalize";
+
+@import "./base/svg_sprite";
+@import "./base/font";
+@import "./base/varib";
+@import "./base/mixin";
+
+@import "./element/button";
+@import "./element/checkbox";
+@import "./element/product_snippet";
+@import "./element/dropdown";
+
+@import "./component/filter";
+@import "./component/slider";
+@import "./component/category_section";
+@import "./component/sort";
+@import "./component/card";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Quicksand';
+	line-height: 1.2;
+	color: $color-text;
+	text-transform: uppercase;
+
+	@include phone {
+		font-size: 14px;
+	}
+}
+
+ul li {
+	list-style: none;
+}
+
+.wrapper {
+	margin-bottom: 60px;
+}
+
+.container {
+	max-width: 1140px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 30px;
+
+	@include phone {
+		padding: 0 12px;
+	}
+}
+
+.header {
+	padding: 25px 0;
+	text-align: center;
+}
+
+.catalog {
+	&__filter {
+		background-color: $bgc-card;
+		padding: 45px 0;
+
+		@include phone {
+			padding: 30px 0px;
+		}
+	}
+}
+
+.tovar {
+	&__nav {
+		background-color: $bgc-card;
+		padding: 45px 0;
+
+		&-link {
+			cursor: pointer;
+
+			span {
+				padding-left: 30px;
+			}	
+		}
+	}
+
+	&__title {
+		font-size: $fz-card-prod;
+		padding: 90px 0;
+		position: relative;
+
+		@include phone {
+			padding: 60px 0;
+			font-size: 18px;
+		}
+
+
+		&-value {
+			background-color: #FFF;
+			padding-right: 20px;
+			z-index: 10;
+			left: 0;
+			@include centered(y);
+		}
+
+		&:after {
+			content: '';
+			height: $prod-sec-bw;
+			width: 100%;
+			background-color: $color-hr;
+			@include centered(y);
+		}
+	}
+}
+
+.svg-google {
+	@include phone {
+		height: 45px;
+	}
+}

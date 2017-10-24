@@ -1,0 +1,12 @@
+mixin checkbox(value)
+	label.checkbox
+		input.checkbox__input(type='checkbox')
+		.checkbox__box
+			.checkbox__box-svg
+				+svg('checked')
+				
+		span.checkbox__label= value
+
+mixin svg(id)
+	svg(class=`svg svg-${id}`)
+		use(xlink:href=`svg/sprite.svg#${id}`)
